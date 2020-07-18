@@ -1,0 +1,70 @@
+body{
+    background: yellowgreen;
+}
+
+.slider {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slider__container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    transform: translate(0);
+    transition: all 0.8s ease;
+}
+
+.slider .slider__container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+ button.previous,button.next{
+    position: absolute;
+    background: transparent ;
+    border: 0 ;
+    top: 50%;
+     transform: translateY(-50%);
+     cursor: pointer;
+
+
+}
+ i{
+    font-size: 30px !important;
+    color: #ffffff;
+}
+button.previous{
+    left: 30px;
+
+}
+ button.next{
+    right: 30px;
+
+}
+ .shortcuts{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     bottom: 30px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+.shortcuts .shortcut{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+.shortcuts .shortcut.active{
+    background: #999999;
+}
+
