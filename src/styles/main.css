@@ -56,8 +56,8 @@ button.previous{
      transform: translateX(-50%);
  }
 .shortcuts .shortcut{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height:10px;
     background: white;
     border-radius: 50%;
     margin: 0 10px;
